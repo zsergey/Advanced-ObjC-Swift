@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "ZSApplication.h"
+#import "ZSRunLoopFactory.h"
 
 int main(int argc, char * argv[]) {
   @autoreleasepool {
-    ZSApplication* application = [ZSApplication new];
-    [application makeTimerInMain];
-    [application makeTimerInBackground];
+    ZSRunLoopFactory* factory = [ZSRunLoopFactory new];
+    [factory makeTimerInMain];
+    [factory makeTimerInBackground];
     
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
   }

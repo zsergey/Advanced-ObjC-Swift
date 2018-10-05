@@ -7,6 +7,7 @@
 //
 
 #import "ZSProxyFactory.h"
+#import "ZSThreadSafeProxy.h"
 
 @implementation ZSProxyFactory
 

@@ -1,5 +1,5 @@
 //
-//  ZSApplication.h
+//  ZSRunLoopFactory.h
 //  AdvancedObjectiveC
 //
 //  Created by Sergey Zapuhlyak on 10/4/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZSApplication : NSObject
+@interface ZSRunLoopFactory : NSObject
 
 - (void)makeTimerInMain;
 - (void)makeTimerInBackground;

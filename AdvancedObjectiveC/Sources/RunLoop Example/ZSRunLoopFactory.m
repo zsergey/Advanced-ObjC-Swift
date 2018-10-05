@@ -1,22 +1,32 @@
 //
-//  ZSApplication.m
+//  ZSRunLoopFactory.m
 //  AdvancedObjectiveC
 //
 //  Created by Sergey Zapuhlyak on 10/4/18.
 //  Copyright © 2018 Sergey Zapuhlyak. All rights reserved.
 //
 
-#import "ZSApplication.h"
+#import "ZSRunLoopFactory.h"
 
-@interface ZSApplication()
+@interface ZSRunLoopFactory()
 @property (assign) NSUInteger counter;
 @end
 
 static NSString* const ThreadExitKey = @"Exit";
 
-@implementation ZSApplication
+@implementation ZSRunLoopFactory
+
+////////////////////////////////////////////
+// RunLoop is infinity loop like this:
+//
+// while (true) {
+//  @autoreleasepool {
+//
+//  }
+// }
 
 - (void)makeTimerInMain {
+  
   @autoreleasepool {
     NSThread *currentThread = [NSThread currentThread];
     BOOL moreWorkToDo = YES;
@@ -46,10 +56,10 @@ static NSString* const ThreadExitKey = @"Exit";
 }
 
 - (void)makeTimerInBackground {
-  @autoreleasepool {
-    self.counter = 0;
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+  self.counter = 0;
+  
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    @autoreleasepool {
       
       NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
         self.counter++;
@@ -61,8 +71,8 @@ static NSString* const ThreadExitKey = @"Exit";
       NSRunLoop *runLoop = NSRunLoop.currentRunLoop;
       [runLoop addTimer:timer forMode:NSDefaultRunLoopMode];
       [runLoop run];
-    });
-  }
+    }
+  });
 }
 
 @end
