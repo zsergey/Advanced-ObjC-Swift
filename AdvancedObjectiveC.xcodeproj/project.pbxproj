@@ -18,6 +18,9 @@
 		AD02D66D21660EB5004DED59 /* ZSThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02D66A21660EB5004DED59 /* ZSThreadSafeProxy.m */; };
 		ADF4B388216E37E30018AE5C /* NSBlock+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B387216E37E30018AE5C /* NSBlock+Extension.m */; };
 		ADF4B38C216E38770018AE5C /* ZSBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B38B216E38770018AE5C /* ZSBlockRunner.m */; };
+		ADF4B398216E51590018AE5C /* SwizzlableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B397216E51590018AE5C /* SwizzlableObject.m */; };
+		ADF4B39C216E52BA0018AE5C /* ZSRunTimeRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B39B216E52BA0018AE5C /* ZSRunTimeRunner.m */; };
+		ADF4B3A6216E58850018AE5C /* ExtendedSwizzlableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B3A4216E58850018AE5C /* ExtendedSwizzlableObject.m */; };
 		ADFBC21A216794BA007F5567 /* ZSProxyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFBC219216794BA007F5567 /* ZSProxyFactory.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,12 @@
 		ADF4B38B216E38770018AE5C /* ZSBlockRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSBlockRunner.m; sourceTree = "<group>"; };
 		ADF4B38E216E39690018AE5C /* NSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlock.h; sourceTree = "<group>"; };
 		ADF4B38F216E39690018AE5C /* NSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlock.m; sourceTree = "<group>"; };
+		ADF4B396216E51590018AE5C /* SwizzlableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzlableObject.h; sourceTree = "<group>"; };
+		ADF4B397216E51590018AE5C /* SwizzlableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlableObject.m; sourceTree = "<group>"; };
+		ADF4B39A216E52BA0018AE5C /* ZSRunTimeRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSRunTimeRunner.h; sourceTree = "<group>"; };
+		ADF4B39B216E52BA0018AE5C /* ZSRunTimeRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSRunTimeRunner.m; sourceTree = "<group>"; };
+		ADF4B3A4216E58850018AE5C /* ExtendedSwizzlableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedSwizzlableObject.m; sourceTree = "<group>"; };
+		ADF4B3A5216E58850018AE5C /* ExtendedSwizzlableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedSwizzlableObject.h; sourceTree = "<group>"; };
 		ADFBC218216794BA007F5567 /* ZSProxyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSProxyFactory.h; sourceTree = "<group>"; };
 		ADFBC219216794BA007F5567 /* ZSProxyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSProxyFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AD02D64D21660E31004DED59 /* main.m */,
+				ADF4B393216E507F0018AE5C /* RunTime Example */,
 				ADF4B37D216E37110018AE5C /* Block Example */,
 				AD02D66421660EB5004DED59 /* Proxy Example */,
 				AD02D66121660EB5004DED59 /* RunLoop Example */,
@@ -200,6 +210,51 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		ADF4B393216E507F0018AE5C /* RunTime Example */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B399216E52AC0018AE5C /* RunTimeRunner */,
+				ADF4B394216E514A0018AE5C /* Objects */,
+			);
+			path = "RunTime Example";
+			sourceTree = "<group>";
+		};
+		ADF4B394216E514A0018AE5C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B3A3216E58850018AE5C /* ExtendedSwizzlableObject */,
+				ADF4B3A1216E58560018AE5C /* SwizzlableObject */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		ADF4B399216E52AC0018AE5C /* RunTimeRunner */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B39A216E52BA0018AE5C /* ZSRunTimeRunner.h */,
+				ADF4B39B216E52BA0018AE5C /* ZSRunTimeRunner.m */,
+			);
+			path = RunTimeRunner;
+			sourceTree = "<group>";
+		};
+		ADF4B3A1216E58560018AE5C /* SwizzlableObject */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B396216E51590018AE5C /* SwizzlableObject.h */,
+				ADF4B397216E51590018AE5C /* SwizzlableObject.m */,
+			);
+			path = SwizzlableObject;
+			sourceTree = "<group>";
+		};
+		ADF4B3A3216E58850018AE5C /* ExtendedSwizzlableObject */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B3A5216E58850018AE5C /* ExtendedSwizzlableObject.h */,
+				ADF4B3A4216E58850018AE5C /* ExtendedSwizzlableObject.m */,
+			);
+			path = ExtendedSwizzlableObject;
+			sourceTree = "<group>";
+		};
 		ADFBC217216794A4007F5567 /* ProxyFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF4B39C216E52BA0018AE5C /* ZSRunTimeRunner.m in Sources */,
 				ADFBC21A216794BA007F5567 /* ZSProxyFactory.m in Sources */,
 				AD02D66D21660EB5004DED59 /* ZSThreadSafeProxy.m in Sources */,
 				ADF4B38C216E38770018AE5C /* ZSBlockRunner.m in Sources */,
@@ -286,6 +342,8 @@
 				AD02D66C21660EB5004DED59 /* ZSProxy.m in Sources */,
 				AD02D65B21660E31004DED59 /* main.m in Sources */,
 				ADF4B388216E37E30018AE5C /* NSBlock+Extension.m in Sources */,
+				ADF4B3A6216E58850018AE5C /* ExtendedSwizzlableObject.m in Sources */,
+				ADF4B398216E51590018AE5C /* SwizzlableObject.m in Sources */,
 				AD02D66B21660EB5004DED59 /* ZSRunLoopFactory.m in Sources */,
 				AD02D65C21660E31004DED59 /* AppDelegate.m in Sources */,
 			);
