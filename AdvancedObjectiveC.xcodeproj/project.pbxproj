@@ -16,6 +16,8 @@
 		AD02D66B21660EB5004DED59 /* ZSRunLoopFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02D66321660EB5004DED59 /* ZSRunLoopFactory.m */; };
 		AD02D66C21660EB5004DED59 /* ZSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02D66721660EB5004DED59 /* ZSProxy.m */; };
 		AD02D66D21660EB5004DED59 /* ZSThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD02D66A21660EB5004DED59 /* ZSThreadSafeProxy.m */; };
+		ADF4B388216E37E30018AE5C /* NSBlock+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B387216E37E30018AE5C /* NSBlock+Extension.m */; };
+		ADF4B38C216E38770018AE5C /* ZSBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF4B38B216E38770018AE5C /* ZSBlockRunner.m */; };
 		ADFBC21A216794BA007F5567 /* ZSProxyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFBC219216794BA007F5567 /* ZSProxyFactory.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,12 @@
 		AD02D66921660EB5004DED59 /* ZSThreadSafeProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSThreadSafeProxy.h; sourceTree = "<group>"; };
 		AD02D66A21660EB5004DED59 /* ZSThreadSafeProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSThreadSafeProxy.m; sourceTree = "<group>"; };
 		AD39AF2A216158BB00925EDA /* AdvancedObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF4B386216E37E30018AE5C /* NSBlock+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBlock+Extension.h"; sourceTree = "<group>"; };
+		ADF4B387216E37E30018AE5C /* NSBlock+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBlock+Extension.m"; sourceTree = "<group>"; };
+		ADF4B38A216E38770018AE5C /* ZSBlockRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSBlockRunner.h; sourceTree = "<group>"; };
+		ADF4B38B216E38770018AE5C /* ZSBlockRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSBlockRunner.m; sourceTree = "<group>"; };
+		ADF4B38E216E39690018AE5C /* NSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlock.h; sourceTree = "<group>"; };
+		ADF4B38F216E39690018AE5C /* NSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlock.m; sourceTree = "<group>"; };
 		ADFBC218216794BA007F5567 /* ZSProxyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSProxyFactory.h; sourceTree = "<group>"; };
 		ADFBC219216794BA007F5567 /* ZSProxyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSProxyFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				AD02D64D21660E31004DED59 /* main.m */,
+				ADF4B37D216E37110018AE5C /* Block Example */,
 				AD02D66421660EB5004DED59 /* Proxy Example */,
 				AD02D66121660EB5004DED59 /* RunLoop Example */,
 				AD02D64E21660E31004DED59 /* AppDelegate */,
@@ -152,6 +161,43 @@
 				AD39AF2A216158BB00925EDA /* AdvancedObjectiveC.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF4B37D216E37110018AE5C /* Block Example */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B389216E38670018AE5C /* BlockRunner */,
+				ADF4B38D216E39690018AE5C /* Block */,
+				ADF4B385216E37920018AE5C /* Block+Extension */,
+			);
+			path = "Block Example";
+			sourceTree = "<group>";
+		};
+		ADF4B385216E37920018AE5C /* Block+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B386216E37E30018AE5C /* NSBlock+Extension.h */,
+				ADF4B387216E37E30018AE5C /* NSBlock+Extension.m */,
+			);
+			path = "Block+Extension";
+			sourceTree = "<group>";
+		};
+		ADF4B389216E38670018AE5C /* BlockRunner */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B38A216E38770018AE5C /* ZSBlockRunner.h */,
+				ADF4B38B216E38770018AE5C /* ZSBlockRunner.m */,
+			);
+			path = BlockRunner;
+			sourceTree = "<group>";
+		};
+		ADF4B38D216E39690018AE5C /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				ADF4B38E216E39690018AE5C /* NSBlock.h */,
+				ADF4B38F216E39690018AE5C /* NSBlock.m */,
+			);
+			path = Block;
 			sourceTree = "<group>";
 		};
 		ADFBC217216794A4007F5567 /* ProxyFactory */ = {
@@ -235,9 +281,11 @@
 			files = (
 				ADFBC21A216794BA007F5567 /* ZSProxyFactory.m in Sources */,
 				AD02D66D21660EB5004DED59 /* ZSThreadSafeProxy.m in Sources */,
+				ADF4B38C216E38770018AE5C /* ZSBlockRunner.m in Sources */,
 				AD02D65D21660E31004DED59 /* ViewController.m in Sources */,
 				AD02D66C21660EB5004DED59 /* ZSProxy.m in Sources */,
 				AD02D65B21660E31004DED59 /* main.m in Sources */,
+				ADF4B388216E37E30018AE5C /* NSBlock+Extension.m in Sources */,
 				AD02D66B21660EB5004DED59 /* ZSRunLoopFactory.m in Sources */,
 				AD02D65C21660E31004DED59 /* AppDelegate.m in Sources */,
 			);
