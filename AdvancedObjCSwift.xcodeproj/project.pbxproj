@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD8B2DE12170D768000BE84D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8B2DAF2170D768000BE84D /* Assets.xcassets */; };
+		AD8B2DE22170D768000BE84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8B2DB02170D768000BE84D /* LaunchScreen.storyboard */; };
+		AD8B2DE32170D768000BE84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8B2DB22170D768000BE84D /* Main.storyboard */; };
+		AD8B2DE52170D768000BE84D /* ZSRunTimeRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DBB2170D768000BE84D /* ZSRunTimeRunner.m */; };
+		AD8B2DE62170D768000BE84D /* ExtendedSwizzlableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DBE2170D768000BE84D /* ExtendedSwizzlableObject.m */; };
+		AD8B2DE72170D768000BE84D /* SwizzlableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DC22170D768000BE84D /* SwizzlableObject.m */; };
+		AD8B2DE82170D768000BE84D /* ZSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DC62170D768000BE84D /* ZSProxy.m */; };
+		AD8B2DE92170D768000BE84D /* ZSThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DC92170D768000BE84D /* ZSThreadSafeProxy.m */; };
+		AD8B2DEA2170D768000BE84D /* ZSProxyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DCB2170D768000BE84D /* ZSProxyFactory.m */; };
+		AD8B2DEB2170D768000BE84D /* ZSRunLoopFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DCF2170D768000BE84D /* ZSRunLoopFactory.m */; };
+		AD8B2DEC2170D768000BE84D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DD02170D768000BE84D /* main.m */; };
+		AD8B2DED2170D768000BE84D /* NSBlock+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DD42170D768000BE84D /* NSBlock+Extension.m */; };
+		AD8B2DEE2170D768000BE84D /* ZSBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DD62170D768000BE84D /* ZSBlockRunner.m */; };
+		AD8B2DF02170D768000BE84D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DDD2170D768000BE84D /* AppDelegate.m */; };
+		AD8B2DF12170D768000BE84D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DDF2170D768000BE84D /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD39AF2A216158BB00925EDA /* AdvancedObjCSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedObjCSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8B2DAF2170D768000BE84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD8B2DB12170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD8B2DB32170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD8B2DB42170D768000BE84D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8B2DBA2170D768000BE84D /* ZSRunTimeRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSRunTimeRunner.h; sourceTree = "<group>"; };
+		AD8B2DBB2170D768000BE84D /* ZSRunTimeRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSRunTimeRunner.m; sourceTree = "<group>"; };
+		AD8B2DBE2170D768000BE84D /* ExtendedSwizzlableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedSwizzlableObject.m; sourceTree = "<group>"; };
+		AD8B2DBF2170D768000BE84D /* ExtendedSwizzlableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedSwizzlableObject.h; sourceTree = "<group>"; };
+		AD8B2DC12170D768000BE84D /* SwizzlableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzlableObject.h; sourceTree = "<group>"; };
+		AD8B2DC22170D768000BE84D /* SwizzlableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzlableObject.m; sourceTree = "<group>"; };
+		AD8B2DC52170D768000BE84D /* ZSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSProxy.h; sourceTree = "<group>"; };
+		AD8B2DC62170D768000BE84D /* ZSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSProxy.m; sourceTree = "<group>"; };
+		AD8B2DC82170D768000BE84D /* ZSThreadSafeProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSThreadSafeProxy.h; sourceTree = "<group>"; };
+		AD8B2DC92170D768000BE84D /* ZSThreadSafeProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSThreadSafeProxy.m; sourceTree = "<group>"; };
+		AD8B2DCB2170D768000BE84D /* ZSProxyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSProxyFactory.m; sourceTree = "<group>"; };
+		AD8B2DCC2170D768000BE84D /* ZSProxyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSProxyFactory.h; sourceTree = "<group>"; };
+		AD8B2DCE2170D768000BE84D /* ZSRunLoopFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSRunLoopFactory.h; sourceTree = "<group>"; };
+		AD8B2DCF2170D768000BE84D /* ZSRunLoopFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSRunLoopFactory.m; sourceTree = "<group>"; };
+		AD8B2DD02170D768000BE84D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD8B2DD32170D768000BE84D /* NSBlock+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBlock+Extension.h"; sourceTree = "<group>"; };
+		AD8B2DD42170D768000BE84D /* NSBlock+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBlock+Extension.m"; sourceTree = "<group>"; };
+		AD8B2DD62170D768000BE84D /* ZSBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSBlockRunner.m; sourceTree = "<group>"; };
+		AD8B2DD72170D768000BE84D /* ZSBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSBlockRunner.h; sourceTree = "<group>"; };
+		AD8B2DD92170D768000BE84D /* NSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlock.h; sourceTree = "<group>"; };
+		AD8B2DDA2170D768000BE84D /* NSBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlock.m; sourceTree = "<group>"; };
+		AD8B2DDC2170D768000BE84D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD8B2DDD2170D768000BE84D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD8B2DDF2170D768000BE84D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD8B2DE02170D768000BE84D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD39AF27216158BB00925EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD39AF21216158BB00925EDA = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DAD2170D768000BE84D /* AdvancedObjCSwift */,
+				AD39AF2B216158BB00925EDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD39AF2B216158BB00925EDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD39AF2A216158BB00925EDA /* AdvancedObjCSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8B2DAD2170D768000BE84D /* AdvancedObjCSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DAE2170D768000BE84D /* Resources */,
+				AD8B2DB52170D768000BE84D /* Sources */,
+			);
+			path = AdvancedObjCSwift;
+			sourceTree = "<group>";
+		};
+		AD8B2DAE2170D768000BE84D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DAF2170D768000BE84D /* Assets.xcassets */,
+				AD8B2DB02170D768000BE84D /* LaunchScreen.storyboard */,
+				AD8B2DB22170D768000BE84D /* Main.storyboard */,
+				AD8B2DB42170D768000BE84D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD8B2DB52170D768000BE84D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DB62170D768000BE84D /* Swift */,
+				AD8B2DB72170D768000BE84D /* ObjC */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AD8B2DB62170D768000BE84D /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		AD8B2DB72170D768000BE84D /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DD02170D768000BE84D /* main.m */,
+				AD8B2DB82170D768000BE84D /* RunTime Example */,
+				AD8B2DC32170D768000BE84D /* Proxy Example */,
+				AD8B2DCD2170D768000BE84D /* RunLoop Example */,
+				AD8B2DD12170D768000BE84D /* Block Example */,
+				AD8B2DDB2170D768000BE84D /* AppDelegate */,
+				AD8B2DDE2170D768000BE84D /* ViewController */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		AD8B2DB82170D768000BE84D /* RunTime Example */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DB92170D768000BE84D /* RunTimeRunner */,
+				AD8B2DBC2170D768000BE84D /* Objects */,
+			);
+			path = "RunTime Example";
+			sourceTree = "<group>";
+		};
+		AD8B2DB92170D768000BE84D /* RunTimeRunner */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DBA2170D768000BE84D /* ZSRunTimeRunner.h */,
+				AD8B2DBB2170D768000BE84D /* ZSRunTimeRunner.m */,
+			);
+			path = RunTimeRunner;
+			sourceTree = "<group>";
+		};
+		AD8B2DBC2170D768000BE84D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DBD2170D768000BE84D /* ExtendedSwizzlableObject */,
+				AD8B2DC02170D768000BE84D /* SwizzlableObject */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		AD8B2DBD2170D768000BE84D /* ExtendedSwizzlableObject */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DBF2170D768000BE84D /* ExtendedSwizzlableObject.h */,
+				AD8B2DBE2170D768000BE84D /* ExtendedSwizzlableObject.m */,
+			);
+			path = ExtendedSwizzlableObject;
+			sourceTree = "<group>";
+		};
+		AD8B2DC02170D768000BE84D /* SwizzlableObject */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DC12170D768000BE84D /* SwizzlableObject.h */,
+				AD8B2DC22170D768000BE84D /* SwizzlableObject.m */,
+			);
+			path = SwizzlableObject;
+			sourceTree = "<group>";
+		};
+		AD8B2DC32170D768000BE84D /* Proxy Example */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DC42170D768000BE84D /* Proxy */,
+				AD8B2DC72170D768000BE84D /* ThreadSafeProxy */,
+				AD8B2DCA2170D768000BE84D /* ProxyFactory */,
+			);
+			path = "Proxy Example";
+			sourceTree = "<group>";
+		};
+		AD8B2DC42170D768000BE84D /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DC52170D768000BE84D /* ZSProxy.h */,
+				AD8B2DC62170D768000BE84D /* ZSProxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		AD8B2DC72170D768000BE84D /* ThreadSafeProxy */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DC82170D768000BE84D /* ZSThreadSafeProxy.h */,
+				AD8B2DC92170D768000BE84D /* ZSThreadSafeProxy.m */,
+			);
+			path = ThreadSafeProxy;
+			sourceTree = "<group>";
+		};
+		AD8B2DCA2170D768000BE84D /* ProxyFactory */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DCC2170D768000BE84D /* ZSProxyFactory.h */,
+				AD8B2DCB2170D768000BE84D /* ZSProxyFactory.m */,
+			);
+			path = ProxyFactory;
+			sourceTree = "<group>";
+		};
+		AD8B2DCD2170D768000BE84D /* RunLoop Example */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DCE2170D768000BE84D /* ZSRunLoopFactory.h */,
+				AD8B2DCF2170D768000BE84D /* ZSRunLoopFactory.m */,
+			);
+			path = "RunLoop Example";
+			sourceTree = "<group>";
+		};
+		AD8B2DD12170D768000BE84D /* Block Example */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DD22170D768000BE84D /* Block+Extension */,
+				AD8B2DD52170D768000BE84D /* BlockRunner */,
+				AD8B2DD82170D768000BE84D /* Block */,
+			);
+			path = "Block Example";
+			sourceTree = "<group>";
+		};
+		AD8B2DD22170D768000BE84D /* Block+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DD32170D768000BE84D /* NSBlock+Extension.h */,
+				AD8B2DD42170D768000BE84D /* NSBlock+Extension.m */,
+			);
+			path = "Block+Extension";
+			sourceTree = "<group>";
+		};
+		AD8B2DD52170D768000BE84D /* BlockRunner */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DD72170D768000BE84D /* ZSBlockRunner.h */,
+				AD8B2DD62170D768000BE84D /* ZSBlockRunner.m */,
+			);
+			path = BlockRunner;
+			sourceTree = "<group>";
+		};
+		AD8B2DD82170D768000BE84D /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DD92170D768000BE84D /* NSBlock.h */,
+				AD8B2DDA2170D768000BE84D /* NSBlock.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		AD8B2DDB2170D768000BE84D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DDC2170D768000BE84D /* AppDelegate.h */,
+				AD8B2DDD2170D768000BE84D /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AD8B2DDE2170D768000BE84D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B2DE02170D768000BE84D /* ViewController.h */,
+				AD8B2DDF2170D768000BE84D /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD39AF29216158BB00925EDA /* AdvancedObjCSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD39AF40216158BC00925EDA /* Build configuration list for PBXNativeTarget "AdvancedObjCSwift" */;
+			buildPhases = (
+				AD39AF26216158BB00925EDA /* Sources */,
+				AD39AF27216158BB00925EDA /* Frameworks */,
+				AD39AF28216158BB00925EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdvancedObjCSwift;
+			productName = AdvancedObjectiveC;
+			productReference = AD39AF2A216158BB00925EDA /* AdvancedObjCSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD39AF22216158BB00925EDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sergey Zapuhlyak";
+				TargetAttributes = {
+					AD39AF29216158BB00925EDA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = AD39AF25216158BB00925EDA /* Build configuration list for PBXProject "AdvancedObjCSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD39AF21216158BB00925EDA;
+			productRefGroup = AD39AF2B216158BB00925EDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD39AF29216158BB00925EDA /* AdvancedObjCSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD39AF28216158BB00925EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8B2DE32170D768000BE84D /* Main.storyboard in Resources */,
+				AD8B2DE12170D768000BE84D /* Assets.xcassets in Resources */,
+				AD8B2DE22170D768000BE84D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD39AF26216158BB00925EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8B2DE62170D768000BE84D /* ExtendedSwizzlableObject.m in Sources */,
+				AD8B2DE52170D768000BE84D /* ZSRunTimeRunner.m in Sources */,
+				AD8B2DEE2170D768000BE84D /* ZSBlockRunner.m in Sources */,
+				AD8B2DE72170D768000BE84D /* SwizzlableObject.m in Sources */,
+				AD8B2DE92170D768000BE84D /* ZSThreadSafeProxy.m in Sources */,
+				AD8B2DF12170D768000BE84D /* ViewController.m in Sources */,
+				AD8B2DEA2170D768000BE84D /* ZSProxyFactory.m in Sources */,
+				AD8B2DEB2170D768000BE84D /* ZSRunLoopFactory.m in Sources */,
+				AD8B2DF02170D768000BE84D /* AppDelegate.m in Sources */,
+				AD8B2DED2170D768000BE84D /* NSBlock+Extension.m in Sources */,
+				AD8B2DEC2170D768000BE84D /* main.m in Sources */,
+				AD8B2DE82170D768000BE84D /* ZSProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD8B2DB02170D768000BE84D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD8B2DB12170D768000BE84D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AD8B2DB22170D768000BE84D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD8B2DB32170D768000BE84D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD39AF3E216158BC00925EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD39AF3F216158BC00925EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD39AF41216158BC00925EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9N53683T3;
+				INFOPLIST_FILE = AdvancedObjCSwift/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsergey.AdvancedObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD39AF42216158BC00925EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9N53683T3;
+				INFOPLIST_FILE = AdvancedObjCSwift/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsergey.AdvancedObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD39AF25216158BB00925EDA /* Build configuration list for PBXProject "AdvancedObjCSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD39AF3E216158BC00925EDA /* Debug */,
+				AD39AF3F216158BC00925EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD39AF40216158BC00925EDA /* Build configuration list for PBXNativeTarget "AdvancedObjCSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD39AF41216158BC00925EDA /* Debug */,
+				AD39AF42216158BC00925EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD39AF22216158BB00925EDA /* Project object */;
+}
