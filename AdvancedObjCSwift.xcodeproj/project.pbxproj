@@ -24,6 +24,7 @@
 		AD8B2DF12170D768000BE84D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DDF2170D768000BE84D /* ViewController.m */; };
 		AD8B2DF52170ECDD000BE84D /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DF42170ECDD000BE84D /* Factorial.swift */; };
 		AD8B2DF72170F8D1000BE84D /* Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DF62170F8D1000BE84D /* Digits.swift */; };
+		AD8B2E1921750256000BE84D /* Multithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2E1821750256000BE84D /* Multithreading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdvancedObjCSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD8B2DF42170ECDD000BE84D /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		AD8B2DF62170F8D1000BE84D /* Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digits.swift; sourceTree = "<group>"; };
+		AD8B2E1821750256000BE84D /* Multithreading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multithreading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			children = (
 				AD8B2DF42170ECDD000BE84D /* Factorial.swift */,
 				AD8B2DF62170F8D1000BE84D /* Digits.swift */,
+				AD8B2E1821750256000BE84D /* Multithreading.swift */,
 				AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */,
 			);
 			path = Algorithms;
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8B2DE62170D768000BE84D /* ExtendedSwizzlableObject.m in Sources */,
+				AD8B2E1921750256000BE84D /* Multithreading.swift in Sources */,
 				AD8B2DE52170D768000BE84D /* ZSRunTimeRunner.m in Sources */,
 				AD8B2DEE2170D768000BE84D /* ZSBlockRunner.m in Sources */,
 				AD8B2DE72170D768000BE84D /* SwizzlableObject.m in Sources */,
