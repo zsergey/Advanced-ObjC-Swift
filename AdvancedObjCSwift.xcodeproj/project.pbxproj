@@ -22,13 +22,14 @@
 		AD8B2DEE2170D768000BE84D /* ZSBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DD62170D768000BE84D /* ZSBlockRunner.m */; };
 		AD8B2DF02170D768000BE84D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DDD2170D768000BE84D /* AppDelegate.m */; };
 		AD8B2DF12170D768000BE84D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DDF2170D768000BE84D /* ViewController.m */; };
-		AD8B2DF52170ECDD000BE84D /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DF42170ECDD000BE84D /* Factorial.swift */; };
-		AD8B2DF72170F8D1000BE84D /* Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2DF62170F8D1000BE84D /* Digits.swift */; };
-		AD8B2E1B21750723000BE84D /* Multithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B2E1A21750723000BE84D /* Multithreading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD39AF2A216158BB00925EDA /* AdvancedObjCSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedObjCSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD63F3EC21760C5E0010C873 /* Factorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factorial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD63F3ED21760CD90010C873 /* Digits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Digits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD63F3EE21760D190010C873 /* Multithreading.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Multithreading.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD63F3EF21760DE50010C873 /* AlpabetDecoder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlpabetDecoder.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD8B2DAF2170D768000BE84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8B2DB12170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8B2DB32170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,9 +60,6 @@
 		AD8B2DDF2170D768000BE84D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD8B2DE02170D768000BE84D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdvancedObjCSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		AD8B2DF42170ECDD000BE84D /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
-		AD8B2DF62170F8D1000BE84D /* Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digits.swift; sourceTree = "<group>"; };
-		AD8B2E1A21750723000BE84D /* Multithreading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multithreading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,9 +289,10 @@
 		AD8B2DF22170EC67000BE84D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				AD8B2DF42170ECDD000BE84D /* Factorial.swift */,
-				AD8B2DF62170F8D1000BE84D /* Digits.swift */,
-				AD8B2E1A21750723000BE84D /* Multithreading.swift */,
+				AD63F3EC21760C5E0010C873 /* Factorial.playground */,
+				AD63F3ED21760CD90010C873 /* Digits.playground */,
+				AD63F3EE21760D190010C873 /* Multithreading.playground */,
+				AD63F3EF21760DE50010C873 /* AlpabetDecoder.playground */,
 				AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */,
 			);
 			path = Algorithms;
@@ -371,20 +370,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8B2DE62170D768000BE84D /* ExtendedSwizzlableObject.m in Sources */,
-				AD8B2E1B21750723000BE84D /* Multithreading.swift in Sources */,
 				AD8B2DE52170D768000BE84D /* ZSRunTimeRunner.m in Sources */,
 				AD8B2DEE2170D768000BE84D /* ZSBlockRunner.m in Sources */,
 				AD8B2DE72170D768000BE84D /* SwizzlableObject.m in Sources */,
 				AD8B2DE92170D768000BE84D /* ZSThreadSafeProxy.m in Sources */,
 				AD8B2DF12170D768000BE84D /* ViewController.m in Sources */,
-				AD8B2DF52170ECDD000BE84D /* Factorial.swift in Sources */,
 				AD8B2DEA2170D768000BE84D /* ZSProxyFactory.m in Sources */,
 				AD8B2DEB2170D768000BE84D /* ZSRunLoopFactory.m in Sources */,
 				AD8B2DF02170D768000BE84D /* AppDelegate.m in Sources */,
 				AD8B2DED2170D768000BE84D /* NSBlock+Extension.m in Sources */,
 				AD8B2DEC2170D768000BE84D /* main.m in Sources */,
 				AD8B2DE82170D768000BE84D /* ZSProxy.m in Sources */,
-				AD8B2DF72170F8D1000BE84D /* Digits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

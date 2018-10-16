@@ -1,17 +1,14 @@
 //
-//  Multithreading.swift
+//  Multithreading.playground
 //  AdvancedObjCSwift
 //
 //  Created by Sergey Zapuhlyak on 15/10/2018.
 //  Copyright © 2018 Sergey Zapuhlyak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // Sample of Multithreading from MBLTDEV.
-// This code prints:
-// 1
-// 3
 //
 func runInQueues() {
   var result = 0
@@ -32,3 +29,5 @@ func runInQueues() {
   group.enter()
   group.notify(queue: .main) { print(result) }
 }
+
+runInQueues()
