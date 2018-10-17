@@ -10,26 +10,45 @@ import UIKit
 
 var iterations: Int = 0
 
+// Extension to able to get substring of String by index.
+//
+public extension String {
+  subscript(short: Int) -> Character {
+    get {
+      return self[index(startIndex, offsetBy: short)]
+    }
+  }
+}
+
+// Func makes string with length equal count that contains representation of index in binary format.
+//
+func makeBits(_ index: Int, _ count: Int) -> String {
+  var string = String(index, radix: 2)
+  string = String(repeating: "0", count: count - string.count) + string
+  return string
+}
+
 // Func recursively decodes alphabet ("1", "2" ... "26") with numbers using array of indexes at index.
 //
-func decode(with numbers: [String], using indexes: [[Int]], at index: Int) -> Set<[String]> {
-  
+func decode(with numbers: [String], at index: Int, max maxValue: Int) -> Set<[String]> {
+
   let decodeNext: ([String]?) -> Set<[String]> = { result in
     let index = index + 1
-    if index < indexes.count {
+    if index < maxValue {
       iterations += 1
-      let next = decode(with: numbers, using: indexes, at: index)
+      let next = decode(with: numbers, at: index, max: maxValue)
       return result == nil ? next : Set([result!]).union(next)
     } else {
       return Set<[String]>()
     }
   }
-  
+
   var result = [String]()
   let alphabet = "1"..<"27"
   var i: Int = 0
+  let bits = makeBits(index, numbers.count)
   while i < numbers.count {
-    if indexes[index][i] == 1 {
+    if bits[i] == "0" {
       result.append(numbers[i])
       i += 1
     } else {
@@ -47,29 +66,12 @@ func decode(with numbers: [String], using indexes: [[Int]], at index: Int) -> Se
   return decodeNext(result)
 }
 
-// Func makes all combinations of indexes from [1, 1, .., 1] to [2, 2, .., 2]
-//
-func makeIndexes(_ count: Int) -> [[Int]] {
-  var result = [[Int]]()
-  let maxValue = Int(pow(2.0, Float(count)))
-  for value in 0..<maxValue {
-    var string = String(value, radix: 2)
-    while string.count < count  {
-      string = "0" + string
-    }
-    string = string.replacingOccurrences(of: "1", with: "2")
-    string = string.replacingOccurrences(of: "0", with: "1")
-    result.append(string.map { Int(String($0))! })
-  }
-  return result
-}
-
 // Func calls recursive func decode(with:using:at:) to decode alphabet.
 //
 func decode(_ string: String) -> Set<[String]> {
   let numbers = string.map { String($0) }
-  let indexes = makeIndexes(numbers.count)
-  return decode(with: numbers, using: indexes, at: 0)
+  let maxValue = Int(pow(2.0, Float(numbers.count)))
+  return decode(with: numbers, at: 0, max: maxValue)
 }
 
 // Using.
@@ -83,6 +85,4 @@ print(result)
 
 print("Iterations: \(iterations)")
 print("Number of ways to decode the string: \(result.count)")
-
-
 
