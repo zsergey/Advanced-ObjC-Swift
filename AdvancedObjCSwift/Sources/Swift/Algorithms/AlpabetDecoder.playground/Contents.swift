@@ -50,34 +50,16 @@ func decode(with numbers: [String], using indexes: [[Int]], at index: Int) -> Se
 // Func makes all combinations of indexes from [1, 1, .., 1] to [2, 2, .., 2]
 //
 func makeIndexes(_ count: Int) -> [[Int]] {
-  let start = Array(repeating: 1, count: count)
   var result = [[Int]]()
-  result.append(start)
-  var startIndex = 0
-  while true {
-    var wasMutating = false
-    var candidate = result[startIndex]
-    for j in 0..<candidate.count {
-      
-      if candidate[j] == 1 {
-        candidate[j] = 2
-      } else if candidate[j] == 2 {
-        candidate[j] = 1
-      }
-      if !result.contains(candidate) {
-        result.append(candidate)
-        wasMutating = true
-      }
-      candidate = result[startIndex]
+  let maxValue = Int(pow(2.0, Float(count)))
+  for value in 0..<maxValue {
+    var string = String(value, radix: 2)
+    while string.count < count  {
+      string = "0" + string
     }
-    startIndex += 1
-    if !wasMutating {
-      break
-    }
-  }
-  let finish = Array(repeating: 2, count: count)
-  if !result.contains(finish) {
-    result.append(finish)
+    string = string.replacingOccurrences(of: "1", with: "2")
+    string = string.replacingOccurrences(of: "0", with: "1")
+    result.append(string.map { Int(String($0))! })
   }
   return result
 }
@@ -101,3 +83,6 @@ print(result)
 
 print("Iterations: \(iterations)")
 print("Number of ways to decode the string: \(result.count)")
+
+
+
