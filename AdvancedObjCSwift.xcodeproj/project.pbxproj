@@ -92,14 +92,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD88D9BE21847F4500F578F5 /* AlpabetDecoder */ = {
+		AD88D9BE21847F4500F578F5 /* Alphabet Decoder */ = {
 			isa = PBXGroup;
 			children = (
 				AD88D9C021847F4500F578F5 /* Standart.playground */,
 				AD88D9BF21847F4500F578F5 /* Fast.playground */,
 				AD88D9C121847F4500F578F5 /* SuperFast.playground */,
 			);
-			path = AlpabetDecoder;
+			path = "Alphabet Decoder";
 			sourceTree = "<group>";
 		};
 		AD8B2DAD2170D768000BE84D /* AdvancedObjCSwift */ = {
@@ -303,7 +303,7 @@
 		AD8B2DF22170EC67000BE84D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				AD88D9BE21847F4500F578F5 /* AlpabetDecoder */,
+				AD88D9BE21847F4500F578F5 /* Alphabet Decoder */,
 				AD63F3EC21760C5E0010C873 /* Factorial.playground */,
 				AD63F3ED21760CD90010C873 /* Digits.playground */,
 				AD63F3EE21760D190010C873 /* Multithreading.playground */,
