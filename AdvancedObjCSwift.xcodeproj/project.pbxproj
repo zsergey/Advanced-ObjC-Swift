@@ -29,7 +29,10 @@
 		AD63F3EC21760C5E0010C873 /* Factorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factorial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD63F3ED21760CD90010C873 /* Digits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Digits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD63F3EE21760D190010C873 /* Multithreading.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Multithreading.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		AD63F3EF21760DE50010C873 /* AlpabetDecoder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AlpabetDecoder.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD88D9BF21847F4500F578F5 /* Fast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Fast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD88D9C021847F4500F578F5 /* Standart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Standart.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD88D9C121847F4500F578F5 /* SuperFast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SuperFast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD88D9C22184818300F578F5 /* CoupleOfNumbers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoupleOfNumbers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD8B2DAF2170D768000BE84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8B2DB12170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8B2DB32170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +92,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AD88D9BE21847F4500F578F5 /* AlpabetDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				AD88D9C021847F4500F578F5 /* Standart.playground */,
+				AD88D9BF21847F4500F578F5 /* Fast.playground */,
+				AD88D9C121847F4500F578F5 /* SuperFast.playground */,
+			);
+			path = AlpabetDecoder;
+			sourceTree = "<group>";
+		};
 		AD8B2DAD2170D768000BE84D /* AdvancedObjCSwift */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8B2DF22170EC67000BE84D /* Algorithms */,
+				AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -289,11 +303,11 @@
 		AD8B2DF22170EC67000BE84D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				AD88D9BE21847F4500F578F5 /* AlpabetDecoder */,
 				AD63F3EC21760C5E0010C873 /* Factorial.playground */,
 				AD63F3ED21760CD90010C873 /* Digits.playground */,
 				AD63F3EE21760D190010C873 /* Multithreading.playground */,
-				AD63F3EF21760DE50010C873 /* AlpabetDecoder.playground */,
-				AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */,
+				AD88D9C22184818300F578F5 /* CoupleOfNumbers.playground */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
