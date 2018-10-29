@@ -29,9 +29,6 @@
 		AD63F3EC21760C5E0010C873 /* Factorial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factorial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD63F3ED21760CD90010C873 /* Digits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Digits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD63F3EE21760D190010C873 /* Multithreading.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Multithreading.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		AD88D9BF21847F4500F578F5 /* Fast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Fast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		AD88D9C021847F4500F578F5 /* Standart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Standart.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		AD88D9C121847F4500F578F5 /* SuperFast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SuperFast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD88D9C22184818300F578F5 /* CoupleOfNumbers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoupleOfNumbers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AD8B2DAF2170D768000BE84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8B2DB12170D768000BE84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +60,9 @@
 		AD8B2DDF2170D768000BE84D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD8B2DE02170D768000BE84D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD8B2DF32170ECDD000BE84D /* AdvancedObjCSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdvancedObjCSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADC42B1621874E7100C9688E /* SuperFast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SuperFast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ADC42B1721874E7100C9688E /* Standart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Standart.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ADC42B1821874E7100C9688E /* Fast.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Fast.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +92,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD88D9BE21847F4500F578F5 /* Alphabet Decoder */ = {
+		AD88D9BE21847F4500F578F5 /* AlphabetDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				AD88D9C021847F4500F578F5 /* Standart.playground */,
-				AD88D9BF21847F4500F578F5 /* Fast.playground */,
-				AD88D9C121847F4500F578F5 /* SuperFast.playground */,
+				ADC42B1721874E7100C9688E /* Standart.playground */,
+				ADC42B1821874E7100C9688E /* Fast.playground */,
+				ADC42B1621874E7100C9688E /* SuperFast.playground */,
 			);
-			path = "Alphabet Decoder";
+			path = AlphabetDecoder;
 			sourceTree = "<group>";
 		};
 		AD8B2DAD2170D768000BE84D /* AdvancedObjCSwift */ = {
@@ -303,7 +303,7 @@
 		AD8B2DF22170EC67000BE84D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				AD88D9BE21847F4500F578F5 /* Alphabet Decoder */,
+				AD88D9BE21847F4500F578F5 /* AlphabetDecoder */,
 				AD63F3EC21760C5E0010C873 /* Factorial.playground */,
 				AD63F3ED21760CD90010C873 /* Digits.playground */,
 				AD63F3EE21760D190010C873 /* Multithreading.playground */,

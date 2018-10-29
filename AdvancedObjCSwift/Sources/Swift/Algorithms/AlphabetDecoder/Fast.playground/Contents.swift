@@ -19,7 +19,7 @@ func decode(_ string: String) -> Int {
 
 // Using.
 //
-let string = "1235321"
+let string = String(repeating: "1", count: 30)
 let result = decode(string)
 
 print("Decode string: \"\(string)\"")
